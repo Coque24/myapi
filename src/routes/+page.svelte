@@ -51,7 +51,7 @@ books = books.filter(book => book.id !== id);
 }
 }
 </script>
-
+<title>MyWebApi</title>
 <div class="container mx-auto p-4">
 <h1 class="text-3xl font-bold mb-6">Lista de Libros</h1>
 
@@ -59,7 +59,7 @@ books = books.filter(book => book.id !== id);
 <h2 class="text-xl font-semibold mb-4">Agregar Libro</h2>
 <div class="flex gap-4">
 <label for="title">Título</label>
-<input bind:value={title} id="title" class="flex-1 p-2 border rounded"/> 
+<input bind:value={title} id="title" placeholder="Título" class="flex-1 p-2 border rounded"/> 
 <label for="autor">Autor</label>
 <input bind:value={author} id="autor" placeholder="Autor" class="flex-1 p-2 border rounded"/>
 <button on:click={addBook} class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Agregar</button>
